@@ -1,0 +1,85 @@
+import React from "react"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+	Navbar,
+	NavbarToggler,
+	Collapse,
+	Nav,
+	NavbarBrand,
+        Container,
+        Col,
+        Row
+} from 'reactstrap';
+import { Link } from "react-router-dom";
+import { IoMdCall } from "react-icons/io"
+import { IoLogoWhatsapp } from "react-icons/io"
+import { Footer } from "rsuite";
+
+
+function Contact() {
+        const [isOpen, setIsOpen] = React.useState(false);
+	         return (
+                        <div>
+		  <div style={{
+			 display: 'block', width: '100%', maxWidth:'100%', backgroundColor:'#EDF0EE' 
+		 }}>
+			  <Navbar  style={{backgroundColor:'#F2F3F4 '}}>
+                          {/* <div className="nav-logo">
+                                <img
+                                src="https://i.pinimg.com/564x/26/b4/f5/26b4f5d56a4b0f8dafc6e6277114aa31.jpg"
+                                alt="Logo"
+                                className="logo"
+                                width="32"
+                                height="32"
+                                />
+                        </div>   */}
+                      <Container>                         
+                <center><p style={{ fontSize: '38px', fontFamily: "Stencil Std", color: '#626567 '}}><span style={{color:'#E74C3C'}}>P</span>ADMA <span style={{color:'#E74C3C'}}>R</span>EFRIGERATION</p></center>    
+              </Container>
+				 <NavbarToggler onClick={() => { setIsOpen(!isOpen) }} />
+				 <Collapse isOpen={isOpen} navbar >
+					 <Nav className="nav" navbar>
+                                         	
+                                                <li>
+                                                <Link to="/">Home</Link>
+                                                </li>
+                                                <li>
+                                                <Link to="/gallery">Gallery</Link>
+                                                </li>
+                                                <li>
+                                                <Link to="/contact">Contact</Link>
+                                                </li>
+                                        </Nav>
+                                </Collapse>
+                          </Navbar> 
+                 </div >
+                 <Container style={{marginTop:'50px'}}>
+                 
+                
+                 <h5><u>Chief Cook:</u></h5>
+                 <Row><Col><b style={{color:'#2F3C7E', fontSize:'20px'}}>Mr. Nallaiah</b> </Col><Col><IoMdCall /> +919876543210 </Col></Row>
+                 
+                 <Row><Col>B.B.A</Col><Col><IoLogoWhatsapp /> +919876543210</Col></Row>
+                 <br></br><br></br>
+ 
+ 
+                 <h5><u>For Catering Orders:</u></h5>
+                 <Row><Col><b style={{color:'#2F3C7E', fontSize:'20px'}}>Mr. Vasantha Rajan</b>  </Col><Col><IoMdCall /> +919876543210 </Col></Row>
+                
+                 <Row><Col>B.B.A</Col><Col><IoLogoWhatsapp /> +919876543210</Col></Row>
+                 <br></br><br></br>
+ 
+                 <h5><u>For Queries and Concerns:</u></h5>
+                 <Row><Col><b style={{color:'#2F3C7E', fontSize:'20px'}}>Mr. Aswin</b>  </Col><Col><IoMdCall /> +919876543210 </Col></Row>
+                 B.E 
+                 <Row><Col>Founder of MaMa kadai</Col><Col><IoLogoWhatsapp /> +919876543210</Col></Row>
+                 </Container>
+                 <Footer style={{marginTop:'60px',}}>
+                     <p style={{fontSize:'15px', textAlign:'center'}}> © 1996-2022 P012. All Rights Reserved.</p>
+                 </Footer>
+                 </div>
+                 );
+}
+
+export default Contact;
+
