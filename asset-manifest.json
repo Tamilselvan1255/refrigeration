@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/refrigeration/static/css/main.17cb6b05.css",
+    "main.js": "/refrigeration/static/js/main.05b2f55b.js",
+    "static/js/787.58e02fd8.chunk.js": "/refrigeration/static/js/787.58e02fd8.chunk.js",
+    "static/media/washing machine1.jpg": "/refrigeration/static/media/washing machine1.870422f90c78c6c24d11.jpg",
+    "static/media/air cooler.jpeg": "/refrigeration/static/media/air cooler.88fedac67bbf121d97cb.jpeg",
+    "index.html": "/refrigeration/index.html",
+    "main.17cb6b05.css.map": "/refrigeration/static/css/main.17cb6b05.css.map",
+    "main.05b2f55b.js.map": "/refrigeration/static/js/main.05b2f55b.js.map",
+    "787.58e02fd8.chunk.js.map": "/refrigeration/static/js/787.58e02fd8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17cb6b05.css",
+    "static/js/main.05b2f55b.js"
+  ]
+}
